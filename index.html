@@ -1,27 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ngabo Business Vanguards</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #292961;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background: #4444aa;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #1a1a40, #292961);
+      color: white;
+    }
+    .hero h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+    .hero button {
+      background-color: gold;
+      color: black;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a40;
+      color: white;
+    }
+  </style>
 </head>
-<body>
-  <header>
+<body>  <header>
     <h1>Ngabo Business Vanguards</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <h2>Welcome to Ngabo Business Vanguards</h2>
-    <p>Photography | Videography | Printing | Branding | Graphic Design</p>
-  </section>
-  <footer>
-    <p>&copy; 2025 Ngabo Business Vanguards. All rights reserved.</p>
-  </footer>
-</body>
+    <p>Photography | Videography | Printing | Branding | Tours</p>
+  </header>  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>  <div class="hero" id="home">
+    <h1>Welcome to Ngabo Business Vanguards</h1>
+    <p>Your one-stop solution for media, design, and travel experiences.</p>
+    <button onclick="window.location='#contact'">📅 Book Now</button>
+  </div>  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Ngabo Business Vanguards and Events Management Ltd. brings you LeviZMedia – our top-tier photography, videography, branding and graphic design wing. We also operate Ngabo B.V Tours and Travel, offering unforgettable journeys across Uganda and beyond.</p>
+  </div>  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Photography & Videography:</strong> Events, products, portraits</li>
+      <li><strong>Printing & Branding:</strong> Banners, posters, merchandise</li>
+      <li><strong>Graphic Design:</strong> Logos, flyers, business cards</li>
+      <li><strong>Travel & Tours:</strong> Customized trips, safaris, cultural tours</li>
+    </ul>
+  </div>  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>  <footer>
+    &copy; 2025 Ngabo Business Vanguards. All rights reserved.
+  </footer></body>
 </html>
