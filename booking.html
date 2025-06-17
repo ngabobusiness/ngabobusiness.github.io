@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now | Ngabo Business Vanguards</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header, footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #25D366;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+    select, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    .button {
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .payment-info {
+      margin-top: 30px;
+      background: #f8f8f8;
+      padding: 15px;
+      border-left: 4px solid #25D366;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Book a Service</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>  <section>
+    <h2>Book Your Session</h2>
+    <label for="service">Select a Service:</label>
+    <select id="service">
+      <option>Photography</option>
+      <option>Videography</option>
+      <option>Branding</option>
+      <option>Printing Services</option>
+      <option>Graphic Design</option>
+      <option>Events Coverage</option>
+    </select><label for="date">Preferred Date:</label>
+<input type="text" id="date" placeholder="e.g. 5th July 2025" />
+
+<label for="name">Your Name:</label>
+<input type="text" id="name" placeholder="e.g. Jane Doe" />
+
+<button class="button" onclick="sendBooking()">Book Now on WhatsApp</button>
+
+<div class="payment-info">
+  <h3>Payment Information:</h3>
+  <p>📞 Mobile Money: <strong>+256785436780</strong></p>
+  <p>💳 PayPal: (Link coming soon)</p>
+</div>
+
+  </section>  <footer>
+    <p>&copy; 2025 Ngabo Business Vanguards and Events Management Ltd.</p>
+    <p>Designed by LeviZMedia</p>
+  </footer>  <script>
+    function sendBooking() {
+      const service = document.getElementById("service").value;
+      const date = document.getElementById("date").value;
+      const name = document.getElementById("name").value;
+      const msg = `Hello, my name is ${name}. I'd like to book a ${service} service on ${date}.`;
+      const phone = "256701457528";
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+      window.open(url, "_blank");
+    }
+  </script></body>
+</html>
