@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Gallery - Ngabo Business Vanguards</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -12,32 +13,40 @@
       background: #f9f9f9;
       color: #333;
     }
+
     header, footer {
       background-color: #1a1a40;
       color: white;
       text-align: center;
       padding: 20px;
     }
-    h1, h2 {
-      text-align: center;
-    }
+
     nav {
       display: flex;
       justify-content: center;
       background-color: #292961;
     }
+
     nav a {
       color: white;
       padding: 15px 20px;
       text-decoration: none;
     }
+
     nav a:hover {
       background-color: #4444aa;
     }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
     .filter-buttons {
       text-align: center;
       margin: 20px 0;
     }
+
     .filter-buttons button {
       margin: 5px;
       padding: 10px 20px;
@@ -47,10 +56,12 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
     .filter-buttons button.active {
       background-color: gold;
       color: black;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -59,142 +70,89 @@
       max-width: 1200px;
       margin: auto;
     }
+
     .gallery img {
       width: 100%;
       border-radius: 10px;
       cursor: pointer;
       transition: transform 0.3s;
     }
+
     .gallery img:hover {
       transform: scale(1.05);
     }
+
     .hidden {
       display: none;
     }
   </style>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery - Ngabo Business Vanguards</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #1a1a40;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .gallery-section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .gallery-section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-  </style>
 </head>
-<body><body>
+<body>
   <header>
-    <h1>Gallery</h1>
+    <h1>Ngabo Business Vanguards</h1>
+    <p>Gallery</p>
   </header>
 
-  <div class="gallery-section">
-    <h2>Our Work</h2>
-    <div class="gallery-grid">
-      <a href="https://via.placeholder.com/1200x800?text=Photo+1" class="glightbox" data-gallery="ngabo">
-        <img src="https://via.placeholder.com/300x200?text=Photo+1" alt="Gallery image 1" />
-      </a>
-      <a href="https://via.placeholder.com/1200x800?text=Photo+2" class="glightbox" data-gallery="ngabo">
-        <img src="https://via.placeholder.com/300x200?text=Photo+2" alt="Gallery image 2" />
-      </a>
-      <a href="https://via.placeholder.com/1200x800?text=Photo+3" class="glightbox" data-gallery="ngabo">
-        <img src="https://via.placeholder.com/300x200?text=Photo+3" alt="Gallery image 3" />
-      </a>
-      <a href="https://via.placeholder.com/1200x800?text=Photo+4" class="glightbox" data-gallery="ngabo">
-        <img src="https://via.placeholder.com/300x200?text=Photo+4" alt="Gallery image 4" />
-      </a>
-    </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Book Now</a>
+  </nav>
+
+  <h2>Our Work</h2>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+    <button class="filter-btn" onclick="filterGallery('photography')">Photography</button>
+    <button class="filter-btn" onclick="filterGallery('branding')">Branding</button>
+    <button class="filter-btn" onclick="filterGallery('events')">Events</button>
   </div>
 
-<header>
-  <h1>Ngabo Business Vanguards</h1>
-  <p>Gallery</p>
-</header>
+  <div class="gallery">
+    <a href="https://via.placeholder.com/1200x800?text=Event+1" class="glightbox events">
+      <img src="https://via.placeholder.com/300x200?text=Event+1" class="gallery-item events" />
+    </a>
+    <a href="https://via.placeholder.com/1200x800?text=Photography+1" class="glightbox photography">
+      <img src="https://via.placeholder.com/300x200?text=Photography+1" class="gallery-item photography" />
+    </a>
+    <a href="https://via.placeholder.com/1200x800?text=Branding+1" class="glightbox branding">
+      <img src="https://via.placeholder.com/300x200?text=Branding+1" class="gallery-item branding" />
+    </a>
+    <a href="https://via.placeholder.com/1200x800?text=Event+2" class="glightbox events">
+      <img src="https://via.placeholder.com/300x200?text=Event+2" class="gallery-item events" />
+    </a>
+    <a href="https://via.placeholder.com/1200x800?text=Photography+2" class="glightbox photography">
+      <img src="https://via.placeholder.com/300x200?text=Photography+2" class="gallery-item photography" />
+    </a>
+    <a href="https://via.placeholder.com/1200x800?text=Branding+2" class="glightbox branding">
+      <img src="https://via.placeholder.com/300x200?text=Branding+2" class="gallery-item branding" />
+    </a>
+  </div>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-  <a href="booking.html">Book Now</a>
-</nav>
+  <footer>
+    &copy; 2025 Ngabo Business Vanguards. All rights reserved.
+  </footer>
 
-<h2>Our Work</h2>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
 
-<div class="filter-buttons">
-  <button class="filter-btn active" onclick="filterGallery('all')">All</button>
-  <button class="filter-btn" onclick="filterGallery('photography')">Photography</button>
-  <button class="filter-btn" onclick="filterGallery('branding')">Branding</button>
-  <button class="filter-btn" onclick="filterGallery('events')">Events</button>
-</div>
+    function filterGallery(category) {
+      const items = document.querySelectorAll('.gallery-item');
+      const buttons = document.querySelectorAll('.filter-btn');
 
-<div class="gallery">
-  <img src="https://via.placeholder.com/300x200?text=Event+1" class="gallery-item events">
-  <img src="https://via.placeholder.com/300x200?text=Photography+1" class="gallery-item photography">
-  <img src="https://via.placeholder.com/300x200?text=Branding+1" class="gallery-item branding">
-  <img src="https://via.placeholder.com/300x200?text=Event+2" class="gallery-item events">
-  <img src="https://via.placeholder.com/300x200?text=Photography+2" class="gallery-item photography">
-  <img src="https://via.placeholder.com/300x200?text=Branding+2" class="gallery-item branding">
-</div>
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
 
-<footer>
-  &copy; 2025 Ngabo Business Vanguards. All rights reserved.
-</footer>
-
-<script>
-  function filterGallery(category) {
-    const items = document.querySelectorAll('.gallery-item');
-    const buttons = document.querySelectorAll('.filter-btn');
-
-    buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
-
-    items.forEach(item => {
-      item.classList.remove('hidden');
-      if (category !== 'all' && !item.classList.contains(category)) {
-        item.classList.add('hidden');
-      }
-    });
-  }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>
-  const lightbox = GLightbox({
-    selector: '.glightbox'
-  });
-</script>
+      items.forEach(item => {
+        item.parentElement.classList.remove('hidden');
+        if (category !== 'all' && !item.classList.contains(category)) {
+          item.parentElement.classList.add('hidden');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
