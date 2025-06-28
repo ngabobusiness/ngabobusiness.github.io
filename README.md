@@ -1,55 +1,101 @@
 # Ngabo Business Vanguards Website
 
-Welcome to the official website repository of **Ngabo Business Vanguards and Events Management Ltd.** This project serves as the online presence for our company, showcasing our services, products, and contact information in a clean and user-friendly interface.
+![Ngabo Business Logo](https://your-logo-link.com/logo.png) <!-- Replace with actual logo URL -->
+
+Welcome to the official website repository of **Ngabo Business Vanguards and Events Management Ltd.** We offer top-tier photography, videography, branding, printing, graphic design, and travel experiences — all under one modern, professional platform.
+
+## 🌍 Company Divisions
+
+- 🎥 **LeviZMedia** – Creative media production (Photography, Videography, Graphic Design, Printing, Branding)
+- 🧭 **Ngabo B.V Tours and Travel** – Customized local & international travel and tourism experiences *(Coming soon)*
+
+---
 
 ## 🌐 Website Structure
 
-This website is built using basic HTML and is organized into multiple standalone pages:
+This website is built using basic HTML and is organized into multiple pages:
 
 - `index.html` – Home page  
 - `about.html` – About our company  
-- `services.html` – Overview of services we offer  
-- `products.html` – Display of products available  
-- `gallery.html` – Media gallery (photos and videos)  
+- `services.html` – All services offered  
+- `products.html` – Our available products  
+- `gallery.html` – Project photos and video samples  
 - `booking.html` – Booking form for services  
-- `contact.html` – Contact information and inquiry form  
+- `contact.html` – Contact and inquiry page  
+
+---
 
 ## 🛠️ Technologies Used
 
 - HTML5  
-- CSS3 *(optional if you’ve added styling)*  
+- CSS3  
 - JavaScript *(if included later)*
 
-## 🧾 Project Purpose
+---
 
-The website is designed to:
+## 🎯 Project Goals
 
-- Promote Ngabo Business Vanguards and its divisions such as **LeviZMedia**
-- Make it easier for clients to book photography, videography, printing, and branding services
-- Showcase completed works and provide contact/payment information
+- Showcase Ngabo Business Vanguards and its divisions
+- Offer easy booking and contact options
+- Display media work samples
+- Prepare for future expansion into travel and tourism
+
+---
 
 ## 📲 Contact & Bookings
 
 - **WhatsApp:** [+256701457528](https://wa.me/256701457528)  
 - **Mobile Money:** +256785436780  
-- *(Add your official email if available)*
+- *(Add email here if needed)*
 
-## 💳 Payment Integration (Coming Soon)
+---
 
-We are working on integrating secure payment options like PayPal and Mobile Money into the booking process.
+## 💳 Payments (In Progress)
 
-## 📷 Media Uploads
+We are working to integrate:
 
-All images and media for the gallery will be updated soon with professional samples from our portfolio.
+- PayPal
+- Mobile Money Checkout
+- Secure online booking
 
-## ✅ How to Contribute
+---
 
-If you are part of the team or a collaborator:
+## 📷 Gallery & Media Uploads
 
-1. Fork the repository  
-2. Clone it using `git clone`  
+Live photos and project visuals will be added soon. The gallery is ready and waiting for uploads of your best works.
+
+---
+
+## 🚐 Tours & Travel (Coming Soon)
+
+**Ngabo B.V Tours and Travel** will offer:
+
+- Local tourism packages  
+- Safari experiences  
+- Airport pickups  
+- International trips  
+
+All bookings and travel packages will be managed through this same website!
+
+---
+
+## 🧑🏽‍💻 How to Contribute
+
+If you're a developer or teammate:
+
+1. Fork this repository  
+2. Clone it: `git clone https://github.com/your-username/ngabobusiness.git`  
 3. Make your changes  
-4. Create a pull request  
+4. Push and create a Pull Request  
+
+---
+
+### 🔗 Useful Links
+
+- 🌐 [Visit Website (GitHub Pages)](https://your-github-username.github.io/ngabobusiness) <!-- replace with actual link -->
+- 🖼️ [LeviZMedia Portfolio](https://levizmedia-link.com) <!-- optional -->
+- 📸 [Facebook Page](https://facebook.com/YourPage)
+- 📧 Email: your@email.com
 
 ---
 
